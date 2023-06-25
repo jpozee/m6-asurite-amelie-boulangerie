@@ -1,0 +1,67 @@
+* { 
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #F28095;
+    margin: 0;
+}
+
+header, footer {
+    width: 1000px;
+    margin: 0 auto;
+}
+/*
+For the header:
+height is 150px
+background color is #141a1a, bowl image is used as background image
+text color should be white
+For the h1:
+set all margin to zero
+add 50px of top padding and 32px of left padding
+For the div with the id of grid-container (a div was used here because this content was only grouped for styling purposes):
+width should be 1000px
+center on page
+background color should be #fdfdfd
+also add the following grid code (written for you)
+display: grid;
+grid-template-columns: 184px 1fr;
+gap: 0 16px;
+For the nav:
+width should be 150px
+add top margin of 16px
+For the list items in the nav:
+remove the bullets
+center-align the text
+For the links in the nav:
+make these display as block-level elements
+add 16px of padding to all sides
+add 8px of margin to the top and bottom and set the left and right margin to auto
+set the background color to #e0e5de
+set the text color to #141a1a
+remove the underline under the text
+make the text bold
+For the first link in the nav (the one that links to the index.html page) and for any time the user hovers on one of the links in the nav:
+make the background color #f28095
+For the main:
+make the text color #542c1b
+add 16px of bottom padding
+For the image in the main:
+tell this image to float to the left (it's going to look like your page is broken for a minute, just finish your CSS)
+For the paragraph in the main and the ul in the main:
+tell these elements to display as inline-block
+set the width of each element to 50%
+For the paragraph in the main only:
+add 32px of left margin
+For the ul in the main only:
+add 16px of left margin 
+For the address:
+stop the content on the page from floating with the style below:
+clear: both;
+add top padding of 16px
+For the footer:
+make the text italic
+center-align the text
+add #afaeb4 as the background color
+set the top and bottom padding to 8px and the left and right padding to 0
