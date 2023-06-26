@@ -5,22 +5,21 @@
 
 body {
     background-color: #F28095;
-    margin: 0;
+    margin: 0px;
 }
 
 header, footer {
     width: 1000px;
-    text-align: center;
     margin: 0 auto;
 }
 
 header {
     height: 150px;
     background-color: #141a1a;
-    background-image: url(images/bowl.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
     color: white;
+    background-image: url(images/bowl.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -71,12 +70,14 @@ main img {
     float: left;
 }
 
-main p, main ul {
+main ul {
     display: inline-block;
     width: 50%;
 }
 
 main p {
+    display: inline-block;
+    width: 50%;
     margin-left: 32px;
 }
 
@@ -93,5 +94,5 @@ footer {
     font-style: italic;
     text-align: center;
     background-color: #afaeb4;
-    padding: 8px 0;
+    padding: 8px 0px;
 }
