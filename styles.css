@@ -10,58 +10,88 @@ body {
 
 header, footer {
     width: 1000px;
+    text-align: center;
     margin: 0 auto;
 }
-/*
-For the header:
-height is 150px
-background color is #141a1a, bowl image is used as background image
-text color should be white
-For the h1:
-set all margin to zero
-add 50px of top padding and 32px of left padding
-For the div with the id of grid-container (a div was used here because this content was only grouped for styling purposes):
-width should be 1000px
-center on page
-background color should be #fdfdfd
-also add the following grid code (written for you)
-display: grid;
-grid-template-columns: 184px 1fr;
-gap: 0 16px;
-For the nav:
-width should be 150px
-add top margin of 16px
-For the list items in the nav:
-remove the bullets
-center-align the text
-For the links in the nav:
-make these display as block-level elements
-add 16px of padding to all sides
-add 8px of margin to the top and bottom and set the left and right margin to auto
-set the background color to #e0e5de
-set the text color to #141a1a
-remove the underline under the text
-make the text bold
-For the first link in the nav (the one that links to the index.html page) and for any time the user hovers on one of the links in the nav:
-make the background color #f28095
-For the main:
-make the text color #542c1b
-add 16px of bottom padding
-For the image in the main:
-tell this image to float to the left (it's going to look like your page is broken for a minute, just finish your CSS)
-For the paragraph in the main and the ul in the main:
-tell these elements to display as inline-block
-set the width of each element to 50%
-For the paragraph in the main only:
-add 32px of left margin
-For the ul in the main only:
-add 16px of left margin 
-For the address:
-stop the content on the page from floating with the style below:
-clear: both;
-add top padding of 16px
-For the footer:
-make the text italic
-center-align the text
-add #afaeb4 as the background color
-set the top and bottom padding to 8px and the left and right padding to 0
+
+header {
+    height: 150px;
+    background-color: #141a1a;
+    background-image: url(images/bowl.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 32px;
+}
+
+#grid-container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+    display: grid;
+    grid-template-columns: 184px 1fr;
+    gap: 0 16px;
+}
+
+nav {
+    width: 150px;
+    margin-top: 16px;
+}
+
+nav li {
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 16px;
+    margin: 8px auto;
+    background-color: #e0e5de;
+    color: #141a1a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li:first-child a, nav a:hover {
+    background-color: #f28095;
+}
+
+main {
+    color: #542c1b;
+    padding-bottom: 16px;
+}
+
+main img {
+    float: left;
+}
+
+main p, main ul {
+    display: inline-block;
+    width: 50%;
+}
+
+main p {
+    margin-left: 32px;
+}
+
+main ul {
+    margin-left: 16px;
+}
+
+address {
+    clear: both;
+    padding-top: 16px;
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+    background-color: #afaeb4;
+    padding: 8px 0;
+}
